@@ -2,26 +2,26 @@
 
 namespace KHAS {
 
-	class Node {
+    class Node {
 
-	public:
+    public:
 
-		// указатель на левое дерево
-		Node* left{ nullptr };
+        // указатель на левое дерево
+        Node* left{ nullptr };
 
-		// указатель на правое дерево
-		Node* right{ nullptr };
+        // указатель на правое дерево
+        Node* right{ nullptr };
 
-		// данные
-		int data{};
+        // данные
+        int data{};
 
 
-		Node(int value, int level = 0)
-			: left(nullptr)
-			, right(nullptr)
-			, data(value) {}
+        Node(int value, int level = 0)
+            : left(nullptr)
+            , right(nullptr)
+            , data(value) {}
 
-		Node() = delete;
-	};
+        Node() = delete;
+    };
 
 }

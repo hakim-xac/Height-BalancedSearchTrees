@@ -3,16 +3,16 @@
 
 int main()
 {
-	using namespace KHAS;
+    using namespace KHAS;
 
-	setlocale(LC_ALL, "Russian");
+    setlocale(LC_ALL, "Russian");
 
-	// Выполняем нашу задачу. Лабораторная работа номер 2.
-	TaskExecution task;
+    // Выполняем нашу задачу. Лабораторная работа номер 2.
+    TaskExecution task;
 
-	// Выполняем функцию отображения на экран консоли
-	task.view();
+    // Выполняем функцию отображения на экран консоли
+    task.view();
 
 
-	return 0;
+    return 0;
 }
