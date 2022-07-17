@@ -22,7 +22,7 @@ namespace KHAS {
     {
         return (avlTree100_ != nullptr && avlTree200_ != nullptr
             && avlTree300_ != nullptr && avlTree400_ != nullptr
-            && avlTree500_ != nullptr && isdpTree500_ != nullptr
+            && avlTree500_ != nullptr && isdpTree100_ != nullptr
             && isdpTree200_ != nullptr && isdpTree300_ != nullptr
             && isdpTree400_ != nullptr && isdpTree500_ != nullptr
             );

@@ -42,7 +42,7 @@ namespace KHAS {
         // проверяет, является ли дерево, деревом поиска
         static bool isSearchTree(const Node* const root)               ;
 
-        // создает сбалансированное дерево поиска
+        // создает АВЛ дерево поиска
         bool toAVL()                                                   ;
 
         // создает идеальное сбалансированное дерево поиска
@@ -52,7 +52,7 @@ namespace KHAS {
         bool fillVector(int size)                                      ;
 
         // добавляет ключ в дерево
-        Node** insert(int key, Node** root)                            ;
+        void insert(int key, Node** root)                            ;
 
     public:
 

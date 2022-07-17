@@ -87,6 +87,7 @@ namespace KHAS {
     {
         if (vec_buffer_.size() == 0) return false;
 
+        // добавляем поочередно все элементы массива в дерево 
         for (auto&& it: vec_buffer_) {
             insert(it, &root_);            
         }
@@ -149,13 +150,18 @@ namespace KHAS {
         return true;
     }
 
-    Node** AVLTree::insert(int key, Node** root)
+    void AVLTree::insert(int key, Node** root)
     {
+        // если *root не nulptr
         while (*root) {
-            if (key < (*root)->data) root = &(*root)->left;
+            // если ключ меньше данных, то меняем указатель на левую ноду
+            if (key < (*root)->data) root = &((*root)->left);
+            // если ключ больше данных, то меняем указатель на правую ноду
             else if (key > (*root)->data) root = &(*root)->right;
-            else return root;
+            else return;
         }
+
+        // если указатель пуст, то создаем ноду для и присваиваем её указателю
         if (*root == nullptr) *root = new (std::nothrow) Node(key);
     }
 
